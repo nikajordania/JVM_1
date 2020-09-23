@@ -30,17 +30,39 @@ public class Main {
 //        System.out.print("Enter number 3: ");
 //        int n3 = input.nextInt();
 //
-//        System.out.println(n1+n2+n3);
 //        System.out.println(n1*n2*n3);
+//        System.out.println(n1+n2+n3);
 
-        //n5
-        System.out.print("enter number: ");
-        int dn4 = input.nextInt();
-        String dns = String.valueOf(dn4);
-        System.out.print("numbers symbols in number: "+ dns.length());
-        int sum = 0;
-        for (int i = 0; i < dns.length(); i++)
-            System.out.println(dn4[i]);
+        //n4
+//        System.out.print("Enter number: ");
+//        int num = input.nextInt();
+//        char [] chars = String.valueOf(num).toCharArray();
+//        for (char aChar : chars) {
+//            System.out.println(aChar);
+//        }
+
+
+          //n5, n6
+//        System.out.print("Enter number: ");
+//        int num = input.nextInt();
+//        int sum = 0;
+//        while (num > 0) {
+//            sum += num % 10;
+//            num = num / 10;
+//        }
+//        System.out.println(sum);
+
+//        n7
+        System.out.print("Enter first number: ");
+        int n1 = input.nextInt();
+        System.out.print("Enter second number: ");
+        int n2 = input.nextInt();
+        while (n2!=0){
+            int usg = n1 % n2;
+            n1 = n2;
+            n2 = usg;
+        }
+        System.out.println(n1);
 
     }
 }
