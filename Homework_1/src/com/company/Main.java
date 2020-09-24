@@ -1,6 +1,8 @@
 package com.company;
-
 import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 
 public class Main {
 
@@ -53,16 +55,63 @@ public class Main {
 //        System.out.println(sum);
 
 //        n7
-        System.out.print("Enter first number: ");
-        int n1 = input.nextInt();
-        System.out.print("Enter second number: ");
-        int n2 = input.nextInt();
-        while (n2!=0){
-            int usg = n1 % n2;
-            n1 = n2;
-            n2 = usg;
+//        System.out.print("Enter first number: ");
+//        int n1 = input.nextInt();
+//        System.out.print("Enter second number: ");
+//        int n2 = input.nextInt();
+//        while (n2!=0){
+//            int usg = n1 % n2;
+//            n1 = n2;
+//            n2 = usg;
+//        }
+//        System.out.println(n1);
+
+        //n8
+//        System.out.print("Enter from number: ");
+//        int n1 = input.nextInt();
+//        System.out.print("Enter to number: ");
+//        int n2 = input.nextInt();
+//        while (n1 <= n2){
+//            System.out.println(n1);
+//            n1++;
+//        }
+
+//        n9
+//        int[] array = {917, 884, -62, 230, 162, 244, -345, 516};
+//        int min = array[0];
+//        int max = array[0];
+//        for(int i = 0; i <= array.length-1; i++) {
+//            System.out.print(array[i]);
+//            if (array[i] < min)
+//                min = array[i];
+//            if (array[i] > max)
+//                max = array[i];
+//        }
+//        System.out.println("Min number in array is: " + min );
+//        System.out.println("Max number in array is: " + max );
+//        n10
+//        int[] array = {917, 884, -62, 230, 162, 244, -345, 516};
+//        Arrays.sort(array);
+//        System.out.println(Arrays.toString(array));
+
+//        n11
+//        int[] array = new int[8];
+//        for (int i = 0; i < array.length; i++) {
+//            array[i] = (int) (Math.random() * (1000 - (-1000)) ) + (-1000);
+//
+//        }
+//        System.out.println(Arrays.toString(array));
+
+//        n12
+        int[] array = new int[8];
+        for (int i = 0; i < array.length; i++)
+            array[i] = (int) (Math.random() * (1000 - (-1000)) ) + (-1000);
+        System.out.println(Arrays.toString(array));
+        Arrays.sort(array);
+        System.out.println(Arrays.toString(array));
+        for (int j = array.length - 1; j >= 0; j--) {
+            System.out.print(array[j] + " ");
         }
-        System.out.println(n1);
 
     }
 }
