@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.Project1.ClassC;
 import com.company.Project2.ClassB;
+import com.company.Project3.ClassRandom;
 
 public class Main {
 
@@ -24,5 +25,7 @@ public class Main {
         obj_2.Method4();
         obj_2.Method5();
 
+        ClassRandom obj_3 = new ClassRandom();
+        obj_3.Input();
     }
 }
